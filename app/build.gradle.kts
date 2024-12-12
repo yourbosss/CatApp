@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.catapp"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -39,7 +39,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -50,8 +49,25 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.activity)
+    implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.drawerlayout)
+    implementation(libs.firebase.inappmessaging)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.3")
+
+    // Облегченная библиотека, содержит только карту, слой пробок,
+    // LocationManager, UserLocationLayer
+    // и возможность скачивать офлайн-карты (только в платной версии).
+    implementation ("com.yandex.android:maps.mobile:4.9.0-lite")
+
+    // Полная библиотека в дополнение к lite версии предоставляет автомобильную маршрутизацию,
+    // веломаршрутизацию, пешеходную маршрутизацию и маршрутизацию на общественном транспорте,
+    // поиск, suggest, геокодирование и отображение панорам.
+    implementation ("com.yandex.android:maps.mobile:4.9.0-full")
 }

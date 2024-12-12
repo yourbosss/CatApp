@@ -20,7 +20,17 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
 
-//категории для регистрации.
+    <string name="food_price">Цена</string>
+    <string name="food_calories"></string>
+
+
+
+
+    <string name="main_scene_main">Main Scene</string>
+    <string name="map_yandex_activity">map_yandex_activity</string>
+
+
+    //категории для регистрации.
         <string-array name="type_food_options">
             <item>Сухой корм</item>
             <item>Влажный корм</item>

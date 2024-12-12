@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="spinner_price" type="id">price</item>
+    <item name="spinner_calories" type="id">calories</item>
+    <item name="spinner_food_calories" type="id">food_calories</item>
+</resources>
